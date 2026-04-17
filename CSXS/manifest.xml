@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.umarsaeed.silencex" ExtensionBundleVersion="1.0.0" ExtensionBundleName="SilenceX by Umar Saeed" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Author>Umar Saeed</Author>
+    <ExtensionList>
+        <Extension Id="com.umarsaeed.silencex.panel" Version="1.0.0" />
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="PPRO" Version="14.0" /> <!-- Premiere Pro 2020+ -->
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="10.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.umarsaeed.silencex.panel">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./jsx/hostscript.jsx</ScriptPath>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>SilenceX</Menu>
+                    <Geometry>
+                        <Size>
+                            <Width>300</Width>
+                            <Height>500</Height>
+                        </Size>
+                        <MinSize>
+                            <Width>250</Width>
+                            <Height>400</Height>
+                        </MinSize>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
