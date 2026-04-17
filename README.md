@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SilenceX by Umar Saeed
+## Professional Adobe Premiere Pro Silence Remover
 
-# Run and deploy your AI Studio app
+SilenceX is a high-performance CEP extension for Adobe Premiere Pro that automatically detects silent gaps in voiceovers and performs ripple deletes to streamline your editing workflow.
 
-This contains everything you need to run your app locally.
+### 🚀 Core Features
+- **Intelligent Detection**: adjustable dB threshold and minimum silence duration.
+- **Ripple Delete**: Automatically closes gaps after cutting silence.
+- **Frosted Glass UI**: Modern, hardware-inspired aesthetic with real-time visualization.
+- **Sensitivity Presets**: One-click switching between Low, Medium, and High detection modes.
+- **Undo Safety**: All operations are wrapped in a single undo group.
 
-View your app in AI Studio: https://ai.studio/apps/e1f30784-fb5e-4994-90cc-5dd42ddc6012
+### 🛠 Technical Specification
+- **Framework**: React 19 + Vite
+- **Styling**: Tailwind CSS v4
+- **Animation**: Motion for React
+- **Logic**: ExtendScript (JSX) for PPRO API
+- **CEP Compatibility**: Premiere Pro 2023+ (v23.0+)
 
-## Run Locally
+### 📁 Structure
+- `/src`: Frontend React application.
+- `/jsx`: Premiere Pro ExtendScript logic.
+- `/CSXS`: Manifest configuration for Adobe CEP.
+- `/public`: Static assets.
 
-**Prerequisites:**  Node.js
+### 🧪 Installation (Manual)
+1. **Enable Debug Mode**:
+   Open Terminal and run:
+   `defaults write com.adobe.CSXS.11 PlayerDebugMode 1` (For CC 2023)
+   `defaults write com.adobe.CSXS.12 PlayerDebugMode 1` (For CC 2024)
+2. **Deploy Extension**:
+   Copy the project folder to:
+   - Mac: `/Library/Application Support/Adobe/CEP/extensions/`
+   - Win: `C:\Program Files (x86)\Common Files\Adobe\CEP\extensions\`
+3. **Launch**:
+   Open Premiere Pro > Window > Extensions > SilenceX.
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 🧑‍💻 Author
+Developed by **Umar Saeed**
+Professional Video Editor & Software Engineer
